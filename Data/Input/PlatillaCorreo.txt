@@ -1,0 +1,7 @@
+<h4 style="font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;">[MENSAJE1]</h4>
+<br>
+<h4 style="font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;">[MENSAJE2]</h4>
+<br>
+<h4 style="font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;">[MENSAJE3]</h4>
+<hr>
+<h6 style="color: grey; font-family: 'Segoe UI', 'Helvetica', 'Arial', sans-serif;">Este correo fue generado automáticamente por un RPA (Favor de no responder).</h6>

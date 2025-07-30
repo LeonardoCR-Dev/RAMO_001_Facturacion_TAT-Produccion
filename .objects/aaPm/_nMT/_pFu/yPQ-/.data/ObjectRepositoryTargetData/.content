@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="x3px0CG_dECAs_9fCVXXaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="861, 151, 52, 19" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;sap colName='AUART' id='usr/cntlGRID1/shellcont/shell' /&gt;" Guid="6aa9807e-fcc4-4c1a-a7ba-009591556501" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='Lista de pedidos de cliente' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="1aa657b1937a6478a9421f9b7efe73b6.png" xmlns="">0C_clXABLSkOX3jg6jiQ4bw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScrollSearchedElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

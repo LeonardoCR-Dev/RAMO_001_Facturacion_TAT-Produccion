@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="KrTrf58kEUef-8beU9WNnA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" DesignTimeRectangle="38, 18, 1622, 18" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;sap id='mbar' /&gt;" FuzzySelectorArgument="&lt;sap id='mbar' /&gt;" Guid="948716ea-c514-46d9-8a15-2d2ec8c07da3" ImageBase64="" ScopeSelectorArgument="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' /&gt;" SearchSteps="Selector" Version="V4" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="8844adfd4d195158ba2460eae7f85b1e.png" xmlns="">0cJzag41vw06Via3HuMjPhw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

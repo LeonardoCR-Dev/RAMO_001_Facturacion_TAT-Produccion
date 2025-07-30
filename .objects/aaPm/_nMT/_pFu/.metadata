@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Lista de pedidos de cliente",
+  "Type": "Screen",
+  "Id": "_pFuVdHnrkSjBJW_2JBagw",
+  "Reference": "jcTXnoL_TUOnkQNzKuqfQA/_pFuVdHnrkSjBJW_2JBagw",
+  "ParentRef": "jcTXnoL_TUOnkQNzKuqfQA/_nMTBacXAEO27nM3XuCO8g",
+  "Created": "2025-02-20T00:09:33.7437276Z",
+  "Updated": "2025-02-20T00:09:33.7437276Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

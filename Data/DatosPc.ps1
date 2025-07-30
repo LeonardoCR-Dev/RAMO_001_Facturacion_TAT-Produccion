@@ -1,0 +1,14 @@
+$archivo = "C:\Users\RPA.FACTURADOR\Documents\UiPath\Facturacion TAT\Data\DatosPc.txt"
+$computerName = $env:COMPUTERNAME
+$userName = $env:USERNAME
+$ipAddress = (Get-NetIPAddress -AddressFamily IPv4 | Where-Object {
+    $_.IPAddress -notlike '127.*' -and $_.PrefixOrigin -ne 'WellKnown'
+}).IPAddress | Select-Object -First 1
+
+$contenido = @"
+NombreMaquina: $computerName
+Usuario: $userName
+IP: $ipAddress
+"@
+
+$contenido | Out-File -FilePath $archivo -Encoding UTF8

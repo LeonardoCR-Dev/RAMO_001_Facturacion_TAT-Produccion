@@ -1,0 +1,13 @@
+﻿{
+  "Name": "SAP Easy Access - Menú …",
+  "Type": "Element",
+  "Id": "BNqPQPoMbE22-SM8NBy08g",
+  "Reference": "jcTXnoL_TUOnkQNzKuqfQA/BNqPQPoMbE22-SM8NBy08g",
+  "ParentRef": "jcTXnoL_TUOnkQNzKuqfQA/k3XzFTf3OUS7BwGkFFYrMw",
+  "Created": "2025-07-17T22:01:51.1245909Z",
+  "Updated": "2025-07-17T22:01:51.1245909Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.10.6.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=25.6.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
