@@ -131,7 +131,7 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="Utiles_EnvioNotificaciones" sap:VirtualizedContainerService.HintSize="960,3424" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="Utiles_EnvioNotificaciones" sap:VirtualizedContainerService.HintSize="938,5809" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:String" Name="str_Correo" />
       <Variable x:TypeArguments="scg:List(upr:ILocalResource)" Name="Lista" />
@@ -142,7 +142,7 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <ui:LogMessage DisplayName="Registrar mensaje" sap:VirtualizedContainerService.HintSize="586,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Inicia Correo&quot;]">
+    <ui:LogMessage DisplayName="Registrar mensaje" sap:VirtualizedContainerService.HintSize="696,173" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Info" Message="[&quot;Inicia Correo&quot;]">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -150,9 +150,9 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </ui:LogMessage>
-    <ui:ReadTextFile Content="[str_Correo]" ContinueOnError="{x:Null}" DisplayName="Leer platilla correo" Encoding="{x:Null}" File="{x:Null}" FileName="[in_Config(&quot;RutaPlantillaCorreo&quot;).ToString]" sap:VirtualizedContainerService.HintSize="586,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" Result="{x:Null}" />
-    <ui:LogMessage DisplayName="Registrar mensaje" sap:VirtualizedContainerService.HintSize="586,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Cargo plantilla&quot;]" />
-    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="586,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+    <ui:ReadTextFile File="{x:Null}" Content="[str_Correo]" DisplayName="Leer platilla correo" FileName="[in_Config(&quot;RutaPlantillaCorreo&quot;).ToString]" sap:VirtualizedContainerService.HintSize="696,112" sap2010:WorkflowViewState.IdRef="ReadTextFile_1" />
+    <ui:LogMessage DisplayName="Registrar mensaje" sap:VirtualizedContainerService.HintSize="696,173" sap2010:WorkflowViewState.IdRef="LogMessage_5" Level="Info" Message="[&quot;Cargo plantilla&quot;]" />
+    <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="696,179" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
       <ui:MultipleAssign.AssignOperations>
         <scg:List x:TypeArguments="ui:AssignOperation" Capacity="4">
           <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
@@ -174,15 +174,15 @@
         </scg:List>
       </ui:MultipleAssign.AssignOperations>
     </ui:MultipleAssign>
-    <If Condition="[string.IsNullOrEmpty(in_str_RutaArchivoAdjunto) = true OR in_str_RutaArchivoAdjunto = &quot;&quot;]" DisplayName="Si hay archivo adjunto" sap:VirtualizedContainerService.HintSize="586,2764" sap2010:WorkflowViewState.IdRef="If_1">
+    <If Condition="[string.IsNullOrEmpty(in_str_RutaArchivoAdjunto) = true OR in_str_RutaArchivoAdjunto = &quot;&quot;]" DisplayName="Si hay archivo adjunto" sap:VirtualizedContainerService.HintSize="696,5149" sap2010:WorkflowViewState.IdRef="If_1">
       <If.Then>
-        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,675" sap2010:WorkflowViewState.IdRef="Sequence_2">
+        <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="590,1733" sap2010:WorkflowViewState.IdRef="Sequence_2">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Mensaje No archivo adjunto" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;No hay archivo adjunto&quot;]">
+          <ui:LogMessage DisplayName="Mensaje No archivo adjunto" sap:VirtualizedContainerService.HintSize="556,173" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[&quot;No hay archivo adjunto&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -190,7 +190,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="434,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
+          <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="556,57" sap2010:WorkflowViewState.IdRef="CommentOut_3">
             <ui:CommentOut.Body>
               <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,229" sap2010:WorkflowViewState.IdRef="Sequence_17">
                 <sap:WorkflowViewStateService.ViewState>
@@ -219,16 +219,16 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:CommentOut>
-          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times 1" sap:VirtualizedContainerService.HintSize="434,221" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="3" StartAt="1">
+          <ui:RepeatNumberOfTimesX DisplayName="Repeat Number of Times 1" sap:VirtualizedContainerService.HintSize="556,1279" sap2010:WorkflowViewState.IdRef="RepeatNumberOfTimesX_1" NumberOfTimes="3" StartAt="1">
             <ui:RepeatNumberOfTimesX.Body>
               <ActivityAction x:TypeArguments="x:Int32">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentItem" />
                 </ActivityAction.Argument>
-                <TryCatch DisplayName="Try Catch 1" sap:VirtualizedContainerService.HintSize="200,25" sap2010:WorkflowViewState.IdRef="TryCatch_3">
+                <TryCatch DisplayName="Try Catch 1" sap:VirtualizedContainerService.HintSize="522,1083" sap2010:WorkflowViewState.IdRef="TryCatch_3">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                       <x:Boolean x:Key="IsPinned">False</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
@@ -239,7 +239,7 @@
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <ui:SendMail ResourceAttachmentList="{x:Null}" AttachmentInputMode="Existing" AttachmentsCollection="{x:Null}" Bcc="{x:Null}" Body="[str_Correo]" Cc="[in_str_Copias]" ContinueOnError="{x:Null}" DisplayName="Send SMTP Email sin adjunto 1" Email="{x:Null}" EnableSSL="True" From="{x:Null}" sap:VirtualizedContainerService.HintSize="450,437" sap2010:WorkflowViewState.IdRef="SendMail_1" IgnoreCRL="{x:Null}" IsBodyHtml="True" MailMessage="{x:Null}" Name="[in_Config(&quot;logF_BusinessProcessName&quot;).ToString.ToUpper]" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachments="{x:Null}" Result="[str_Salida]" SecureConnection="Auto" SecurePassword="{x:Null}" Server="{x:Null}" Subject="[in_str_Asunto]" TimeoutMS="{x:Null}" To="[in_str_Receptor]" UseISConnection="True" UseOAuth="{x:Null}">
+                      <ui:SendMail Bcc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" IgnoreCRL="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" ResourceAttachments="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" Body="[str_Correo]" Cc="[in_str_Copias]" ConnectionId="ce77b5ad-bbb6-4155-a733-2e03d5fb650e" DisplayName="Send SMTP Email sin adjunto 1" EnableSSL="True" sap:VirtualizedContainerService.HintSize="450,437" sap2010:WorkflowViewState.IdRef="SendMail_1" IsBodyHtml="True" Name="[in_Config(&quot;logF_BusinessProcessName&quot;).ToString.ToUpper]" Result="[str_Salida]" SecureConnection="Auto" Subject="[in_str_Asunto]" To="[in_str_Receptor]" UseISConnection="True">
                         <ui:SendMail.AttachmentsBackup>
                           <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
                             <usau:BackupSlot.BackupValues>
@@ -312,11 +312,11 @@
               </ActivityAction>
             </ui:RepeatNumberOfTimesX.Body>
           </ui:RepeatNumberOfTimesX>
-          <ui:LogMessage DisplayName="Log Salida Correo" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Respuesta correo: &quot;+str_Salida]" />
+          <ui:LogMessage DisplayName="Log Salida Correo" sap:VirtualizedContainerService.HintSize="556,164" sap2010:WorkflowViewState.IdRef="LogMessage_7" Level="Info" Message="[&quot;Respuesta correo: &quot;+str_Salida]" />
         </Sequence>
       </If.Then>
       <If.Else>
-        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="552,1928" sap2010:WorkflowViewState.IdRef="Sequence_3">
+        <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="662,3255" sap2010:WorkflowViewState.IdRef="Sequence_3">
           <Sequence.Variables>
             <Variable x:TypeArguments="upr:ILocalResource" Name="resource" />
             <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="ls_Rutas" />
@@ -326,7 +326,7 @@
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <ui:LogMessage DisplayName="Mensaje Archivo adjunto" sap:VirtualizedContainerService.HintSize="518,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Se enviara archivo adjunto&quot;]">
+          <ui:LogMessage DisplayName="Mensaje Archivo adjunto" sap:VirtualizedContainerService.HintSize="628,173" sap2010:WorkflowViewState.IdRef="LogMessage_3" Level="Info" Message="[&quot;Se enviara archivo adjunto&quot;]">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -334,7 +334,7 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
           </ui:LogMessage>
-          <Assign DisplayName="Inicializacion lista" sap:VirtualizedContainerService.HintSize="518,114" sap2010:WorkflowViewState.IdRef="Assign_5">
+          <Assign DisplayName="Inicializacion lista" sap:VirtualizedContainerService.HintSize="628,114" sap2010:WorkflowViewState.IdRef="Assign_5">
             <Assign.To>
               <OutArgument x:TypeArguments="scg:List(upr:ILocalResource)">[Lista]</OutArgument>
             </Assign.To>
@@ -342,7 +342,7 @@
               <InArgument x:TypeArguments="scg:List(upr:ILocalResource)">[New List(Of UiPath.Platform.ResourceHandling.ILocalResource)]</InArgument>
             </Assign.Value>
           </Assign>
-          <If Condition="[in_str_RutaArchivoAdjunto.Contains(&quot;;&quot;)]" DisplayName="Si contiene ;" sap:VirtualizedContainerService.HintSize="518,1270" sap2010:WorkflowViewState.IdRef="If_4">
+          <If Condition="[in_str_RutaArchivoAdjunto.Contains(&quot;;&quot;)]" DisplayName="Si contiene ;" sap:VirtualizedContainerService.HintSize="628,1270" sap2010:WorkflowViewState.IdRef="If_4">
             <If.Then>
               <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="484,677" sap2010:WorkflowViewState.IdRef="Sequence_18">
                 <sap:WorkflowViewStateService.ViewState>
@@ -358,7 +358,7 @@
                     <InArgument x:TypeArguments="scg:IEnumerable(x:String)">[Split(in_str_RutaArchivoAdjunto,";")]</InArgument>
                   </Assign.Value>
                 </Assign>
-                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="450,503" sap2010:WorkflowViewState.IdRef="ForEach`1_2" MaxIterations="{x:Null}" Values="[ls_Rutas]">
+                <ui:ForEach x:TypeArguments="x:String" CurrentIndex="{x:Null}" DisplayName="For Each currentText" sap:VirtualizedContainerService.HintSize="450,503" sap2010:WorkflowViewState.IdRef="ForEach`1_2" Values="[ls_Rutas]">
                   <ui:ForEach.Body>
                     <ActivityAction x:TypeArguments="x:String">
                       <ActivityAction.Argument>
@@ -370,7 +370,7 @@
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
-                        <ui:PathExists DisplayName="Path Exists Adjunto" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="382,147" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[currentText]" PathType="File" Resource="[resource]" />
+                        <ui:PathExists Exists="{x:Null}" DisplayName="Path Exists Adjunto" sap:VirtualizedContainerService.HintSize="382,147" sap2010:WorkflowViewState.IdRef="PathExists_2" Path="[currentText]" PathType="File" Resource="[resource]" />
                         <InvokeMethod DisplayName="Invoke Method 2" sap:VirtualizedContainerService.HintSize="382,159" sap2010:WorkflowViewState.IdRef="InvokeMethod_2" MethodName="Add">
                           <InvokeMethod.TargetObject>
                             <InArgument x:TypeArguments="scg:List(upr:ILocalResource)">[Lista]</InArgument>
@@ -390,7 +390,7 @@
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
-                <ui:PathExists DisplayName="Path Exists Adjunto" Exists="{x:Null}" sap:VirtualizedContainerService.HintSize="382,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[in_str_RutaArchivoAdjunto]" PathType="File" Resource="[resource]" />
+                <ui:PathExists Exists="{x:Null}" DisplayName="Path Exists Adjunto" sap:VirtualizedContainerService.HintSize="382,147" sap2010:WorkflowViewState.IdRef="PathExists_1" Path="[in_str_RutaArchivoAdjunto]" PathType="File" Resource="[resource]" />
                 <InvokeMethod DisplayName="Invoke Method" sap:VirtualizedContainerService.HintSize="382,168" sap2010:WorkflowViewState.IdRef="InvokeMethod_3" MethodName="Add">
                   <InvokeMethod.TargetObject>
                     <InArgument x:TypeArguments="scg:List(upr:ILocalResource)">[Lista]</InArgument>
@@ -425,7 +425,7 @@
               </Sequence>
             </If.Else>
           </If>
-          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="518,311" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+          <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="628,1638" sap2010:WorkflowViewState.IdRef="TryCatch_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -433,10 +433,10 @@
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
             <TryCatch.Try>
-              <Sequence DisplayName="Envio Sequence" sap:VirtualizedContainerService.HintSize="416,25" sap2010:WorkflowViewState.IdRef="Sequence_8">
+              <Sequence DisplayName="Envio Sequence" sap:VirtualizedContainerService.HintSize="590,1387" sap2010:WorkflowViewState.IdRef="Sequence_8">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     <x:Boolean x:Key="IsPinned">False</x:Boolean>
                   </scg:Dictionary>
                 </sap:WorkflowViewStateService.ViewState>
@@ -454,7 +454,7 @@
                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <ui:SendMail ResourceAttachmentList="{x:Null}" AttachmentInputMode="Existing" AttachmentsCollection="{x:Null}" Bcc="{x:Null}" Body="[str_Correo]" Cc="[in_str_Copias]" ConnectionId="ce77b5ad-bbb6-4155-a733-2e03d5fb650e" ContinueOnError="{x:Null}" DisplayName="Send SMTP Email con adjunto2" Email="{x:Null}" EnableSSL="True" From="{x:Null}" sap:VirtualizedContainerService.HintSize="450,437" sap2010:WorkflowViewState.IdRef="SendMail_2" IgnoreCRL="{x:Null}" IsBodyHtml="True" MailMessage="{x:Null}" Name="[in_Config(&quot;logF_BusinessProcessName&quot;).ToString.ToUpper]" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachments="[Lista]" Result="[str_Salida]" SecureConnection="Auto" SecurePassword="{x:Null}" Server="{x:Null}" Subject="[in_str_Asunto]" TimeoutMS="{x:Null}" To="[in_str_Receptor]" UseISConnection="True" UseOAuth="{x:Null}">
+                            <ui:SendMail Bcc="{x:Null}" ContinueOnError="{x:Null}" Email="{x:Null}" From="{x:Null}" IgnoreCRL="{x:Null}" MailMessage="{x:Null}" Password="{x:Null}" Port="{x:Null}" ReplyTo="{x:Null}" ResourceAttachmentList="{x:Null}" SecurePassword="{x:Null}" Server="{x:Null}" TimeoutMS="{x:Null}" UseOAuth="{x:Null}" AttachmentInputMode="Existing" Body="[str_Correo]" Cc="[in_str_Copias]" ConnectionId="ce77b5ad-bbb6-4155-a733-2e03d5fb650e" DisplayName="Send SMTP Email con adjunto2" EnableSSL="True" sap:VirtualizedContainerService.HintSize="450,437" sap2010:WorkflowViewState.IdRef="SendMail_2" IsBodyHtml="True" Name="[in_Config(&quot;logF_BusinessProcessName&quot;).ToString.ToUpper]" ResourceAttachments="[Lista]" Result="[str_Salida]" SecureConnection="Auto" Subject="[in_str_Asunto]" To="[in_str_Receptor]" UseISConnection="True">
                               <ui:SendMail.AttachmentsBackup>
                                 <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
                                   <usau:BackupSlot.BackupValues>
@@ -574,7 +574,7 @@
               </Sequence>
             </TryCatch.Try>
             <TryCatch.Catches>
-              <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="420,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+              <Catch x:TypeArguments="si:IOException" sap:VirtualizedContainerService.HintSize="594,22" sap2010:WorkflowViewState.IdRef="Catch`1_1">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">False</x:Boolean>
@@ -585,7 +585,7 @@
                   <ActivityAction.Argument>
                     <DelegateInArgument x:TypeArguments="si:IOException" Name="exception" />
                   </ActivityAction.Argument>
-                  <ui:SendOutlookMail Account="{x:Null}" AttachmentsCollection="{x:Null}" Bcc="{x:Null}" Body="[str_Correo]" Cc="[in_str_Copias]" ContinueOnError="{x:Null}" DisplayName="Enviar correo por outlook con adjuntos" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" MailMessage="{x:Null}" ReplyTo="{x:Null}" Sensitivity="Normal" SentOnBehalfOfName="{x:Null}" Subject="[in_str_Asunto]" TimeoutMS="{x:Null}" To="[in_str_Receptor]" UseISConnection="True">
+                  <ui:SendOutlookMail Account="{x:Null}" Bcc="{x:Null}" ContinueOnError="{x:Null}" MailMessage="{x:Null}" ReplyTo="{x:Null}" TimeoutMS="{x:Null}" Body="[str_Correo]" Cc="[in_str_Copias]" DisplayName="Enviar correo por outlook con adjuntos" sap:VirtualizedContainerService.HintSize="334,146" sap2010:WorkflowViewState.IdRef="SendOutlookMail_3" Importance="Normal" IsBodyHtml="True" IsDraft="False" Sensitivity="Normal" Subject="[in_str_Asunto]" To="[in_str_Receptor]" UseISConnection="True">
                     <ui:SendOutlookMail.ConnectionDetailsBackupSlot>
                       <usau:BackupSlot x:TypeArguments="umae:ConnectionDetails" StoredValue="{x:Null}">
                         <usau:BackupSlot.BackupValues>
