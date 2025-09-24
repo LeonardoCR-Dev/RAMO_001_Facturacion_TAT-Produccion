@@ -107,7 +107,7 @@
       <x:Boolean x:Key="ShouldExpandAll">True</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Flowchart DisplayName="ValidacionVentanas" sap:VirtualizedContainerService.HintSize="977,786.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ValidacionVentanas" sap:VirtualizedContainerService.HintSize="1409,786.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="bool_Bandera" />
       <Variable x:TypeArguments="x:String" Name="str_Caso" />
@@ -2556,7 +2556,7 @@
                                                                                                                                           <Parallel.CompletionCondition>
                                                                                                                                             <VisualBasicValue x:TypeArguments="x:Boolean" ExpressionText="bool_Bandera1 OR bool_Bandera2 OR bool_Bandera3 OR bool_Bandera4 Or bool_Bandera5" sap2010:WorkflowViewState.IdRef="VisualBasicValue`1_1" />
                                                                                                                                           </Parallel.CompletionCondition>
-                                                                                                                                          <Sequence DisplayName="Ventana 1" sap:VirtualizedContainerService.HintSize="576,789" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                                                                                                                                          <Sequence DisplayName="Ventana 1" sap:VirtualizedContainerService.HintSize="576,785" sap2010:WorkflowViewState.IdRef="Sequence_14">
                                                                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2674,7 +2674,7 @@
                                                                                                                                               </If.Else>
                                                                                                                                             </If>
                                                                                                                                           </Sequence>
-                                                                                                                                          <Sequence DisplayName="Ventana 2" sap:VirtualizedContainerService.HintSize="576,789" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                                                                                                                                          <Sequence DisplayName="Ventana 2" sap:VirtualizedContainerService.HintSize="576,785" sap2010:WorkflowViewState.IdRef="Sequence_11">
                                                                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2780,7 +2780,7 @@
                                                                                                                                               </If.Else>
                                                                                                                                             </If>
                                                                                                                                           </Sequence>
-                                                                                                                                          <Sequence DisplayName="Ventana 3" sap:VirtualizedContainerService.HintSize="576,789" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                                                                                                                                          <Sequence DisplayName="Ventana 3" sap:VirtualizedContainerService.HintSize="576,785" sap2010:WorkflowViewState.IdRef="Sequence_10">
                                                                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2900,7 +2900,7 @@
                                                                                                                                               </If.Else>
                                                                                                                                             </If>
                                                                                                                                           </Sequence>
-                                                                                                                                          <Sequence DisplayName="Ventana 4" sap:VirtualizedContainerService.HintSize="576,789" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                                                                                                                                          <Sequence DisplayName="Ventana 4" sap:VirtualizedContainerService.HintSize="576,785" sap2010:WorkflowViewState.IdRef="Sequence_22">
                                                                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -2958,13 +2958,13 @@
                                                                                                                                               </If.Else>
                                                                                                                                             </If>
                                                                                                                                           </Sequence>
-                                                                                                                                          <Sequence DisplayName="Ventana 5" sap:VirtualizedContainerService.HintSize="576,789" sap2010:WorkflowViewState.IdRef="Sequence_31">
+                                                                                                                                          <Sequence DisplayName="Ventana 5" sap:VirtualizedContainerService.HintSize="576,785" sap2010:WorkflowViewState.IdRef="Sequence_31">
                                                                                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                                                               </scg:Dictionary>
                                                                                                                                             </sap:WorkflowViewStateService.ViewState>
-                                                                                                                                            <Assign sap:VirtualizedContainerService.HintSize="502,115" sap2010:WorkflowViewState.IdRef="Assign_9">
+                                                                                                                                            <Assign sap:VirtualizedContainerService.HintSize="502,114" sap2010:WorkflowViewState.IdRef="Assign_9">
                                                                                                                                               <Assign.To>
                                                                                                                                                 <OutArgument x:TypeArguments="x:Boolean">[bool_Bandera5]</OutArgument>
                                                                                                                                               </Assign.To>
@@ -2987,15 +2987,15 @@
                                                                                                                                                 </scg:Dictionary>
                                                                                                                                               </sap:WorkflowViewStateService.ViewState>
                                                                                                                                             </ui:UiElementExists>
-                                                                                                                                            <If Condition="[bool_Bandera5]" DisplayName="Pantalla principal" sap:VirtualizedContainerService.HintSize="502,475" sap2010:WorkflowViewState.IdRef="If_9">
+                                                                                                                                            <If Condition="[bool_Bandera5]" DisplayName="Pantalla principal" sap:VirtualizedContainerService.HintSize="502,472" sap2010:WorkflowViewState.IdRef="If_9">
                                                                                                                                               <If.Then>
-                                                                                                                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,223" sap2010:WorkflowViewState.IdRef="Sequence_32">
+                                                                                                                                                <Sequence DisplayName="Then" sap:VirtualizedContainerService.HintSize="468,222" sap2010:WorkflowViewState.IdRef="Sequence_32">
                                                                                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                                                                                     </scg:Dictionary>
                                                                                                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                                                                                                  <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_10">
+                                                                                                                                                  <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_10">
                                                                                                                                                     <Assign.To>
                                                                                                                                                       <OutArgument x:TypeArguments="x:String">[str_Caso]</OutArgument>
                                                                                                                                                     </Assign.To>
@@ -3060,7 +3060,7 @@
                                                                                                                                                 </Sequence>
                                                                                                                                               </If.Then>
                                                                                                                                               <If.Else>
-                                                                                                                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,90" sap2010:WorkflowViewState.IdRef="Sequence_33">
+                                                                                                                                                <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,89" sap2010:WorkflowViewState.IdRef="Sequence_33">
                                                                                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3134,10 +3134,7 @@
                                             </FlowStep>
                                           </FlowDecision.True>
                                           <FlowDecision.False>
-                                            <FlowDecision x:Name="__ReferenceID61" DisplayName="Exito?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_18">
-                                              <FlowDecision.Condition>
-                                                <VisualBasicValue x:TypeArguments="x:Boolean" DisplayName="Visual basic value" ExpressionText="bool_Exito" />
-                                              </FlowDecision.Condition>
+                                            <FlowDecision x:Name="__ReferenceID61" Condition="[bool_Exito]" DisplayName="Exito?" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_18" True="{x:Reference __ReferenceID0}">
                                               <sap:WorkflowViewStateService.ViewState>
                                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -3148,9 +3145,6 @@
                                                   <av:PointCollection x:Key="FalseConnector">1130,830 1175,830</av:PointCollection>
                                                 </scg:Dictionary>
                                               </sap:WorkflowViewStateService.ViewState>
-                                              <FlowDecision.True>
-                                                <x:Reference>__ReferenceID0</x:Reference>
-                                              </FlowDecision.True>
                                               <FlowDecision.False>
                                                 <FlowStep x:Name="__ReferenceID6" sap2010:WorkflowViewState.IdRef="FlowStep_7">
                                                   <sap:WorkflowViewStateService.ViewState>

@@ -139,7 +139,7 @@
       <x:Boolean x:Key="ShouldCollapseAll">False</x:Boolean>
     </scg:Dictionary>
   </sap:WorkflowViewStateService.ViewState>
-  <Flowchart DisplayName="Sap_Facturacion" sap:VirtualizedContainerService.HintSize="955,784.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="Sap_Facturacion" sap:VirtualizedContainerService.HintSize="1409,786.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="sd:DataTable" Name="dt_DatosZsd" />
       <Variable x:TypeArguments="s:Int32[]" Name="ListaReparticion" />
@@ -1519,7 +1519,7 @@
                                                                             <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                           </scg:Dictionary>
                                                                         </sap:WorkflowViewStateService.ViewState>
-                                                                        <ui:LogMessage DisplayName="Mensaje cierre completo" sap:VirtualizedContainerService.HintSize="452,173" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Cierre completado | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen+&quot; | Fecha de entrega: &quot;+in_str_FechaEntrega]">
+                                                                        <ui:LogMessage DisplayName="Mensaje cierre completo" sap:VirtualizedContainerService.HintSize="416,173" sap2010:WorkflowViewState.IdRef="LogMessage_17" Level="Info" Message="[&quot;Cierre completado | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen+&quot; | Fecha de entrega: &quot;+in_str_FechaEntrega]">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1527,7 +1527,7 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:LogMessage>
-                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termino facturacion paso 1" FileName="[in_Config(&quot;RutaArchivoEjecucion&quot;).ToString]" sap:VirtualizedContainerService.HintSize="452,165" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[&quot;---&gt;Termina fase facturacion paso 1 | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen+&quot; | Fecha Creacion: &quot;+in_Config(&quot;DiaEjecucion&quot;).ToString]" UseDefaultEncoding="False">
+                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termino facturacion paso 1" FileName="[in_Config(&quot;RutaArchivoEjecucion&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="AppendLine_10" Text="[&quot;---&gt;Termina fase facturacion paso 1 | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen+&quot; | Fecha Creacion: &quot;+in_Config(&quot;DiaEjecucion&quot;).ToString]" UseDefaultEncoding="False">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1535,7 +1535,7 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:AppendLine>
-                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EscribirLogStorage Fac 1 Fin" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Modulos\Utiles\Utiles_EscribirLogStorage.xaml">
+                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EscribirLogStorage Fac 1 Fin" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_41" UnSafe="False" WorkflowFileName="Modulos\Utiles\Utiles_EscribirLogStorage.xaml">
                                                                           <ui:InvokeWorkflowFile.Arguments>
                                                                             <InArgument x:TypeArguments="x:String" x:Key="in_str_Log">["---&gt;Termina fase facturacion paso 1 | Agencia: "+in_str_Agencia+" | Almacen: "+in_str_Almacen+" | Fecha Creacion: "+in_Config("DiaEjecucion").ToString]</InArgument>
                                                                             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
@@ -1546,7 +1546,7 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:InvokeWorkflowFile>
-                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Regresar ventana principal" sap:VirtualizedContainerService.HintSize="452,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" Level="Trace" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Modulos\Sap\Sap_NavegarTransaccion.xaml">
+                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="Regresar ventana principal" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_28" Level="Trace" LogEntry="OnlyInvocation" LogExit="OnlySuccessfulReturn" UnSafe="False" WorkflowFileName="Modulos\Sap\Sap_NavegarTransaccion.xaml">
                                                                           <ui:InvokeWorkflowFile.Arguments>
                                                                             <InArgument x:TypeArguments="x:String" x:Key="in_str_Transaccion">/N</InArgument>
                                                                             <InArgument x:TypeArguments="x:Int32" x:Key="in_int_SegundosEspera" />
@@ -1558,7 +1558,7 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:InvokeWorkflowFile>
-                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termino facturacion paso 2" FileName="[in_Config(&quot;RutaArchivoEjecucion&quot;).ToString]" sap:VirtualizedContainerService.HintSize="452,165" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[&quot;---&gt;Termina fase facturacion paso 2 | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen+&quot; | Fecha Creacion: &quot;+in_Config(&quot;DiaEjecucion&quot;).ToString]" UseDefaultEncoding="False">
+                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termino facturacion paso 2" FileName="[in_Config(&quot;RutaArchivoEjecucion&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="AppendLine_9" Text="[&quot;---&gt;Termina fase facturacion paso 2 | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen+&quot; | Fecha Creacion: &quot;+in_Config(&quot;DiaEjecucion&quot;).ToString]" UseDefaultEncoding="False">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1566,7 +1566,7 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:AppendLine>
-                                                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,327" sap2010:WorkflowViewState.IdRef="CommentOut_2">
+                                                                        <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="416,57" sap2010:WorkflowViewState.IdRef="CommentOut_2">
                                                                           <ui:CommentOut.Body>
                                                                             <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,216" sap2010:WorkflowViewState.IdRef="Sequence_66">
                                                                               <sap:WorkflowViewStateService.ViewState>
@@ -1577,8 +1577,14 @@
                                                                               <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro inicia facturacion paso 1 Registro" FileName="[in_Config(&quot;RutaCarpetaTemporal&quot;).ToString+&quot;Registro.txt&quot;]" sap:VirtualizedContainerService.HintSize="382,156" sap2010:WorkflowViewState.IdRef="AppendLine_14" Text="Termina  fase facturacion paso 2 - Cierre&lt;br&gt;" UseDefaultEncoding="False" />
                                                                             </Sequence>
                                                                           </ui:CommentOut.Body>
+                                                                          <sap:WorkflowViewStateService.ViewState>
+                                                                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                                              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                                                                              <x:Boolean x:Key="IsPinned">True</x:Boolean>
+                                                                            </scg:Dictionary>
+                                                                          </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:CommentOut>
-                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EscribirLogStorage Fac 2 Fin" sap:VirtualizedContainerService.HintSize="452,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Modulos\Utiles\Utiles_EscribirLogStorage.xaml">
+                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EscribirLogStorage Fac 2 Fin" sap:VirtualizedContainerService.HintSize="416,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_42" UnSafe="False" WorkflowFileName="Modulos\Utiles\Utiles_EscribirLogStorage.xaml">
                                                                           <ui:InvokeWorkflowFile.Arguments>
                                                                             <InArgument x:TypeArguments="x:String" x:Key="in_str_Log">["---&gt;Termina fase facturacion paso 2 | Agencia: "+in_str_Agencia+" | Almacen: "+in_str_Almacen+" | Fecha Creacion: "+in_Config("DiaEjecucion").ToString]</InArgument>
                                                                             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
@@ -1589,7 +1595,7 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:InvokeWorkflowFile>
-                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termino facturacion" FileName="[in_Config(&quot;RutaArchivoEjecucion&quot;).ToString]" sap:VirtualizedContainerService.HintSize="452,165" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;---&gt;Termina fase facturacion | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen +&quot; | Fecha Creacion: &quot;+in_Config(&quot;DiaEjecucion&quot;).ToString]" UseDefaultEncoding="False">
+                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termino facturacion" FileName="[in_Config(&quot;RutaArchivoEjecucion&quot;).ToString]" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="AppendLine_8" Text="[&quot;---&gt;Termina fase facturacion | Agencia: &quot;+in_str_Agencia+&quot; | Almacen: &quot;+in_str_Almacen +&quot; | Fecha Creacion: &quot;+in_Config(&quot;DiaEjecucion&quot;).ToString]" UseDefaultEncoding="False">
                                                                           <sap:WorkflowViewStateService.ViewState>
                                                                             <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1597,8 +1603,8 @@
                                                                             </scg:Dictionary>
                                                                           </sap:WorkflowViewStateService.ViewState>
                                                                         </ui:AppendLine>
-                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termina facturacion Registro" FileName="[in_Config(&quot;RutaCarpetaTemporal&quot;).ToString+&quot;Registro.txt&quot;]" sap:VirtualizedContainerService.HintSize="452,165" sap2010:WorkflowViewState.IdRef="AppendLine_15" Text="Termina fase facturacion - ZSD_PLANPEDIDOS_FM_2&lt;br&gt;" UseDefaultEncoding="False" />
-                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EscribirLogStorage Fac Fin" sap:VirtualizedContainerService.HintSize="452,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_43" UnSafe="False" WorkflowFileName="Modulos\Utiles\Utiles_EscribirLogStorage.xaml">
+                                                                        <ui:AppendLine File="{x:Null}" DisplayName="Escribir registro termina facturacion Registro" FileName="[in_Config(&quot;RutaCarpetaTemporal&quot;).ToString+&quot;Registro.txt&quot;]" sap:VirtualizedContainerService.HintSize="416,165" sap2010:WorkflowViewState.IdRef="AppendLine_15" Text="Termina fase facturacion - ZSD_PLANPEDIDOS_FM_2&lt;br&gt;" UseDefaultEncoding="False" />
+                                                                        <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="EscribirLogStorage Fac Fin" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_43" UnSafe="False" WorkflowFileName="Modulos\Utiles\Utiles_EscribirLogStorage.xaml">
                                                                           <ui:InvokeWorkflowFile.Arguments>
                                                                             <InArgument x:TypeArguments="x:String" x:Key="in_str_Log">["---&gt;Termina fase facturacion | Agencia: "+in_str_Agencia+" | Almacen: "+in_str_Almacen +" | Fecha Creacion: "+in_Config("DiaEjecucion").ToString]</InArgument>
                                                                             <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[in_Config]</InArgument>
@@ -1623,13 +1629,13 @@
                                                                       <av:PointCollection x:Key="ConnectorLocation">1040,1625 1040,1690</av:PointCollection>
                                                                     </scg:Dictionary>
                                                                   </sap:WorkflowViewStateService.ViewState>
-                                                                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="Ventana Cierre 2" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="WindowScope_14" InformativeScreenshot="3694b84ce90af21504fdcf76f4fdd5d7" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;" TimeoutMS="120000">
+                                                                  <ui:WindowScope ApplicationWindow="{x:Null}" SearchScope="{x:Null}" Window="{x:Null}" DisplayName="Ventana Cierre 2" sap:VirtualizedContainerService.HintSize="570,3327" sap2010:WorkflowViewState.IdRef="WindowScope_14" InformativeScreenshot="3694b84ce90af21504fdcf76f4fdd5d7" Selector="&lt;wnd app='saplogon.exe' cls='SAP_FRONTEND_SESSION' title='SAP' /&gt;" TimeoutMS="120000">
                                                                     <ui:WindowScope.Body>
                                                                       <ActivityAction x:TypeArguments="x:Object">
                                                                         <ActivityAction.Argument>
                                                                           <DelegateInArgument x:TypeArguments="x:Object" Name="ContextTarget" />
                                                                         </ActivityAction.Argument>
-                                                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,3066" sap2010:WorkflowViewState.IdRef="Sequence_46">
+                                                                        <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="536,3180" sap2010:WorkflowViewState.IdRef="Sequence_46">
                                                                           <Sequence.Variables>
                                                                             <Variable x:TypeArguments="x:Boolean" Name="bool_Bandera" />
                                                                           </Sequence.Variables>
@@ -1682,6 +1688,7 @@
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                 <ui:GetFullText IgnoreHidden="{x:Null}" DisplayName="Get Full Text cierre 1" sap:VirtualizedContainerService.HintSize="382,119" sap2010:WorkflowViewState.IdRef="GetFullText_1">
@@ -1728,7 +1735,7 @@
                                                                               </Catch>
                                                                             </TryCatch.Catches>
                                                                           </TryCatch>
-                                                                          <If Condition="[bool_Bandera]" sap:VirtualizedContainerService.HintSize="502,1473" sap2010:WorkflowViewState.IdRef="If_10">
+                                                                          <If Condition="[bool_Bandera]" sap:VirtualizedContainerService.HintSize="502,1587" sap2010:WorkflowViewState.IdRef="If_10">
                                                                             <sap:WorkflowViewStateService.ViewState>
                                                                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -1740,6 +1747,7 @@
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                                                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
                                                                                 <ui:Click AlterIfDisabled="{x:Null}" DelayBefore="{x:Null}" DelayMS="{x:Null}" SendWindowMessages="{x:Null}" SimulateClick="{x:Null}" ClickType="CLICK_SINGLE" DisplayName="Click 'Button Continuar'" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="Click_33" KeyModifiers="None" MouseButton="BTN_LEFT">
@@ -1776,14 +1784,14 @@
                                                                               </Sequence>
                                                                             </If.Then>
                                                                             <If.Else>
-                                                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="416,835" sap2010:WorkflowViewState.IdRef="Sequence_45">
+                                                                              <Sequence DisplayName="Else" sap:VirtualizedContainerService.HintSize="468,949" sap2010:WorkflowViewState.IdRef="Sequence_45">
                                                                                 <sap:WorkflowViewStateService.ViewState>
                                                                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                                                                   </scg:Dictionary>
                                                                                 </sap:WorkflowViewStateService.ViewState>
-                                                                                <Delay DisplayName="Esperar 5 seg" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="382,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
-                                                                                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text status" sap:VirtualizedContainerService.HintSize="382,139" sap2010:WorkflowViewState.IdRef="GetValue_2">
+                                                                                <Delay DisplayName="Esperar 5 seg" Duration="00:00:02" sap:VirtualizedContainerService.HintSize="434,122" sap2010:WorkflowViewState.IdRef="Delay_3" />
+                                                                                <ui:GetValue ContinueOnError="{x:Null}" DisplayName="Get Text status" sap:VirtualizedContainerService.HintSize="434,139" sap2010:WorkflowViewState.IdRef="GetValue_2">
                                                                                   <ui:GetValue.Target>
                                                                                     <ui:Target ClippingRegion="{x:Null}" Element="{x:Null}" Id="7338bd91-e425-4f12-aeda-1ce2503add1f" InformativeScreenshot="5771fe9d90796e0cfdd37219352db93b" Selector="&lt;sap id='sbar/pane[0]' type='GuiStatusPane' /&gt;">
                                                                                       <ui:Target.TimeoutMS>
@@ -1798,14 +1806,22 @@
                                                                                     <OutArgument x:TypeArguments="x:String">[str_Resultado]</OutArgument>
                                                                                   </ui:GetValue.Value>
                                                                                 </ui:GetValue>
-                                                                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TakeScreenshot - Invoke Workflow File (Framework\TakeScreenshot.xaml)" sap:VirtualizedContainerService.HintSize="382,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_45" UnSafe="False" WorkflowFileName="Framework\TakeScreenshot.xaml">
+                                                                                <Assign DisplayName="Assign Pendiente" sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_14">
+                                                                                  <Assign.To>
+                                                                                    <OutArgument x:TypeArguments="x:Boolean">[bool_Pendientes]</OutArgument>
+                                                                                  </Assign.To>
+                                                                                  <Assign.Value>
+                                                                                    <InArgument x:TypeArguments="x:Boolean">True</InArgument>
+                                                                                  </Assign.Value>
+                                                                                </Assign>
+                                                                                <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="TakeScreenshot - Invoke Workflow File (Framework\TakeScreenshot.xaml)" sap:VirtualizedContainerService.HintSize="434,177" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_45" UnSafe="False" WorkflowFileName="Framework\TakeScreenshot.xaml">
                                                                                   <ui:InvokeWorkflowFile.Arguments>
                                                                                     <InArgument x:TypeArguments="x:String" x:Key="in_Folder">[in_Config("ExScreenshotsFolderPath").ToString]</InArgument>
                                                                                     <InOutArgument x:TypeArguments="x:String" x:Key="io_FilePath">[io_str_RutaImgReintento]</InOutArgument>
                                                                                   </ui:InvokeWorkflowFile.Arguments>
                                                                                 </ui:InvokeWorkflowFile>
-                                                                                <ui:LogMessage DisplayName="Log Message Screenshot" sap:VirtualizedContainerService.HintSize="382,173" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;Captura de pantalla - Reintento&quot;]" />
-                                                                                <ui:LogMessage DisplayName="Mensaje status" sap:VirtualizedContainerService.HintSize="382,164" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Estatus sap: &quot;+str_Resultado]">
+                                                                                <ui:LogMessage DisplayName="Log Message Screenshot" sap:VirtualizedContainerService.HintSize="434,173" sap2010:WorkflowViewState.IdRef="LogMessage_29" Level="Info" Message="[&quot;Captura de pantalla - Reintento&quot;]" />
+                                                                                <ui:LogMessage DisplayName="Mensaje status" sap:VirtualizedContainerService.HintSize="434,164" sap2010:WorkflowViewState.IdRef="LogMessage_16" Level="Info" Message="[&quot;Estatus sap: &quot;+str_Resultado]">
                                                                                   <sap:WorkflowViewStateService.ViewState>
                                                                                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                                                                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
